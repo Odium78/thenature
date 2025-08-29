@@ -1,13 +1,39 @@
 html {
     scroll-behavior: smooth;
 }
-
 .nav-pills .nav-link.active {
     background-color: #11613c; /* custom orange */
     color: #fff !important;              /* make text readable */
 }
 
-img.row-icon{
-    height: 256px;
-    width: 256px;
+header{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: bold;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: 0.75px black;
+}
+h3{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 550;
+}
+p{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 425;
+}
+.title{
+    color: #61997E;
+    
+}
+.footercolor{
+    background-color: #82CCA8;
 }
