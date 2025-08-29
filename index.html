@@ -11,6 +11,20 @@
     body {
       font-family: 'Poppins', sans-serif;
       background: #f5fff5;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Background overlay */
+    body::before {
+      content: "";
+      background: url("https://www.nature.org/content/dam/tnc/nature/en/photos/TNC_Nature.jpg") no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.15; /* low opacity */
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
     }
 
     header {
