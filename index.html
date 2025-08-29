@@ -1,102 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>EcoNet: The Next Gen's Hope</title>
-    <div class="container">
-        <header class="bg-success bg-gradient d-flex justify-content-center py-3 fixed-top"> 
-            <ul class="nav nav-pills"> 
-                <li class="nav-item">
-                    <a href="#" 
-                    class="link-dark nav-link" 
-                    aria-current="page"
-                    onmouseover="linkIn(this)" 
-                    onmouseout="linkOut(this)">Home</a> 
-                </li> 
-                <li class="nav-item">
-                    <a href="#" 
-                    class="link-dark nav-link"
-                    onmouseover="linkIn(this)" 
-                    onmouseout="linkOut(this)">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" 
-                    class="link-dark nav-link"
-                    onmouseover="linkIn(this)" 
-                    onmouseout="linkOut(this)">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" 
-                    class="link-dark nav-link"
-                    onmouseover="linkIn(this)" 
-                    onmouseout="linkOut(this)">FAQs</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" 
-                    class="link-dark nav-link" 
-                    onmouseover="linkIn(this)" 
-                    onmouseout="linkOut(this)">About</a>
-                </li> 
-            </ul> 
-        </header>
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoNet: The Next Gen's Hope</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5fff5;
+    }
+
+    header {
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-top: 100px;
+      font-weight: 700;
+      color: #155724;
+    }
+
+    /* Slide in animation */
+    .slide-left {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: all 1s ease-in-out;
+    }
+
+    .slide-right {
+      opacity: 0;
+      transform: translateX(100%);
+      transition: all 1s ease-in-out;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #d4edda;
+      color: #155724;
+    }
+
+    footer a {
+      color: #0b5ed7;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <img src="res/banner.png" class="img-fluid justify-content-center">
-    <h1 class="text-center">Effects and Impacts of SDG 17 on the Tech Industry</h1>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row pt-5 startIn">
-            <div class="col text-start">
-                <h3>Driving Technology Transfer and Innovation</h3>
-                <p>
-                    SDG 17 emphasizes global cooperation in science, technology, and innovation (United Nations, 2015). 
-                    <br>This encourages technology companies in developed economies to share innovations with developing nations. 
-                    <br>For instance, the UN Technology Bank helps least developed countries access scientific knowledge 
-                    <br>and digital tools (United Nations, 2024b). This transfer accelerates innovation
-                    <br> in fields like renewable energy, health technology, and artificial intelligence.
-                </p>
-            </div>
-            <div class="col text-start">
-                <img src="res/tl.png" class="img-fluid">
-            </div>
-        </div>
-        <div class="row text-end pt-5">
-            <div class="col">
-                <img src="res/tl2.png" class="img-fluid">
-            </div>
-            <div class="col">
-                <h3 class="">Expanding Digital Infrastructure and Connectivity</h3>
-                <p class="">
-                    One of the key targets (17.8) focuses on enhancing ICT access. Global internet penetration
-                    <br>reached 68% in 2024, but 2.6 billion people remain offline (United Nations, 2024a). 
-                    <br>This presents both a challenge and an opportunity for the tech industry. Companies like telecom providers,
-                    <br>cloud platforms, and device manufacturers benefit from demand for affordable and widespread connectivity solutions.
-                </p>
-            </div>
-        </div>
-        <div class="row text-end pt-5">
-            <div class="col">
-                <img src="res/tl2.png" class="img-fluid">
-            </div>
-            <div class="col">
-                <h3 class="">Expanding Digital Infrastructure and Connectivity</h3>
-                <p>
-                    One of the key targets (17.8) focuses on enhancing ICT access. Global internet penetration
-                    <br>reached 68% in 2024, but 2.6 billion people remain offline (United Nations, 2024a). 
-                    <br>This presents both a challenge and an opportunity for the tech industry. Companies like telecom providers,
-                    <br>cloud platforms, and device manufacturers benefit from demand for affordable and widespread connectivity solutions.
-                </p>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <div class="container">
+    <header class="bg-success bg-gradient d-flex justify-content-center py-3 fixed-top"> 
+      <ul class="nav nav-pills"> 
+        <li class="nav-item"><a href="#" class="link-dark nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="link-dark nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="link-dark nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="link-dark nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="link-dark nav-link">About</a></li>
+      </ul> 
+    </header>
+  </div>
+
+  <!-- Banner -->
+  <img src="res/banner.png" class="img-fluid justify-content-center" alt="Banner">
+
+  <h1 class="text-center">Effects and Impacts of SDG 17 on the Tech Industry</h1>
+
+  <div class="container">
+    <!-- First Row -->
+    <div class="row pt-5 align-items-center">
+      <div class="col slide-left">
+        <h3>Driving Technology Transfer and Innovation</h3>
+        <p>
+          SDG 17 emphasizes global cooperation in science, technology, and innovation (United Nations, 2015). 
+          <br>This encourages technology companies in developed economies to share innovations with developing nations. 
+          <br>For instance, the UN Technology Bank helps least developed countries access scientific knowledge 
+          <br>and digital tools (United Nations, 2024b). This transfer accelerates innovation
+          <br>in fields like renewable energy, health technology, and artificial intelligence.
+        </p>
+      </div>
+      <div class="col text-center slide-right">
+        <img src="res/tl.png" class="img-fluid rounded shadow">
+      </div>
     </div>
+
+    <!-- Second Row -->
+    <div class="row pt-5 align-items-center">
+      <div class="col text-center slide-left">
+        <img src="res/tl2.png" class="img-fluid rounded shadow">
+      </div>
+      <div class="col slide-right">
+        <h3>Expanding Digital Infrastructure and Connectivity</h3>
+        <p>
+          One of the key targets (17.8) focuses on enhancing ICT access. Global internet penetration
+          <br>reached 68% in 2024, but 2.6 billion people remain offline (United Nations, 2024a). 
+          <br>This presents both a challenge and an opportunity for the tech industry. Companies like telecom providers,
+          <br>cloud platforms, and device manufacturers benefit from demand for affordable and widespread connectivity solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with references -->
+  <footer>
+    <p><strong>References:</strong></p>
+    <p>
+      United Nations (2015). <em>Transforming our world: the 2030 Agenda for Sustainable Development</em>.  
+      <br>United Nations (2024a). <em>Digital connectivity statistics</em>.  
+      <br>United Nations (2024b). <em>UN Technology Bank initiatives</em>.  
+    </p>
+    <p>&copy; 2025 EcoNet Project</p>
+  </footer>
+
+  <script>
+    // Scroll animation observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.slide-left, .slide-right').forEach(el => observer.observe(el));
+  </script>
 </body>
-<footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</footer>
 </html>
