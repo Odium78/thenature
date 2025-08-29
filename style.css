@@ -6,3 +6,8 @@ html {
     background-color: #11613c; /* custom orange */
     color: #fff !important;              /* make text readable */
 }
+
+img.row-icon{
+    height: 256px;
+    width: 256px;
+}
