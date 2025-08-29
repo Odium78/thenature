@@ -1,0 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #11613c; /* custom orange */
+    color: #fff !important;              /* make text readable */
+}
