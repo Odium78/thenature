@@ -15,15 +15,17 @@
       z-index: 0;
     }
 
-    /* Background overlay */
+    /* Background overlay with low opacity */
     body::before {
       content: "";
-      background: url("https://www.nature.org/content/dam/tnc/nature/en/photos/TNC_Nature.jpg") no-repeat center center fixed;
+      background: url("https://scontent.fmnl9-3.fna.fbcdn.net/v/t1.15752-9/541144701_1456804358894862_1301327078285499191_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEOln3fAdLxeB0af-fAmzd6tnDSJTzIZ1O2cNIlPMhnU3uWj4KaokuT6UW3-zDN1_34qSMjPaQ0nzN8srFFM5MK&_nc_ohc=9mFX4L8KFWwQ7kNvwH9oolR&_nc_oc=AdkFMgwgMvEkwqrOHsJgmA57MB5i39xpVUKfeCsJs5_Q6Jgj2YSQUzOy8XwO9djo9ec&_nc_zt=23&_nc_ht=scontent.fmnl9-3.fna&oh=03_Q7cD3AE9T03Us-4cabSG59DymZcnJUUgOmzubo4kSa8Eh0gn-w&oe=68D9160E") no-repeat center center fixed;
       background-size: cover;
       opacity: 0.15; /* low opacity */
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
       z-index: -1;
     }
 
