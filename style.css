@@ -37,3 +37,7 @@ p{
 .footercolor{
     background-color: #82CCA8;
 }
+.rounded-bottom-3 {
+    border-bottom-left-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+}
