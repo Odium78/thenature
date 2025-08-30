@@ -48,13 +48,11 @@ p{
     will-change: opacity, transform;
     pointer-events: none;
 }
-
 .fade-item.visible {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
 }
-
 .slide-item-right {
     opacity: 0;
     transform: translateX(36px);
@@ -62,7 +60,6 @@ p{
     will-change: opacity, transform;
     pointer-events: none;
 }
-
 .slide-item-left {
     opacity: 0;
     transform: translateX(-36px);
@@ -70,10 +67,29 @@ p{
     will-change: opacity, transform;
     pointer-events: none;
 }
-
 .slide-item-right.visible,
 .slide-item-left.visible {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
+}
+.shadow-blur{
+    text-shadow: 3px 3px 8px lightgray;
+}
+/* bobbing effect kasi maangas ako */
+@keyframes bob {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+.bob {
+    animation: bob 4s ease-in-out infinite;
+    will-change: transform;
+    display: inline-block;
+}
+/* check for user settings "reduced motion"  */
+@media (prefers-reduced-motion: reduce) {
+    .bob {
+        animation: none !important;
+    }
 }
