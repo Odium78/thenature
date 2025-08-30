@@ -2,8 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 .nav-pills .nav-link.active {
-    background-color: #11613c; /* custom orange */
-    color: #fff !important;              /* make text readable */
+    background-color: #11613c;
+    color: #fff !important;
 }
 
 header{
@@ -40,4 +40,40 @@ p{
 .rounded-bottom-3 {
     border-bottom-left-radius: 0.75rem !important;
     border-bottom-right-radius: 0.75rem !important;
+}
+.fade-item {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+    pointer-events: none;
+}
+
+.fade-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.slide-item-right {
+    opacity: 0;
+    transform: translateX(36px);
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+    pointer-events: none;
+}
+
+.slide-item-left {
+    opacity: 0;
+    transform: translateX(-36px);
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+    pointer-events: none;
+}
+
+.slide-item-right.visible,
+.slide-item-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
 }
