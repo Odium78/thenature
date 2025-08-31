@@ -6,10 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>EcoNet: The Next Gen's Hope</title>
     <div class="container">
+        <header class="bg-success bg-gradient d-flex justify-content-center py-3 fixed-top rounded-bottom-3 shadow-lg"> 
         <header class="bg-success bg-gradient d-flex justify-content-center py-3 fixed-top rounded-bottom-3 shadow-lg"> 
             <ul class="nav nav-pills"> 
                 <li class="nav-item">
@@ -24,11 +28,14 @@
                     class="link-dark nav-link"
                     onmouseover="linkIn(this)" 
                     onmouseout="linkOut(this)">About Us</a>
+                    onmouseout="linkOut(this)">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" 
                     class="link-dark nav-link"
                     onmouseover="linkIn(this)" 
+                    onmouseout="linkOut(this)">References</a>
+                </li>
                     onmouseout="linkOut(this)">Rereferences</a>
                 </li>
             </ul> 
@@ -37,96 +44,143 @@
 </head>
 <body>
     <img src="res/banner.png" class="img-fluid">
-    <h1 class="text-center title pt-5">Effects and Impacts of SDG 13 on the Tech Industry</h1>
+    <h1 class="text-center title pt-5 shadow-blur">Effects and Impacts of SDG 13 on Nature and Technology</h1>
     <div class="container ps-5 pe-5">
         <br>
         <br>
         <div class="container px-5">
-            <div class="row pt-5">
-                <div class="col text-start">
-                    <h3>Driving Technology Transfer and Innovation</h3>
+
+            <!-- Section 1 -->
+            <div class="row pt-5 text-start">
+                <div class="col">
+                    <h3 class="shadow-blur">Technology for Ecosystem Monitoring</h3>
                     <p>
-                        SDG 17 emphasizes global cooperation in science, technology, and innovation (United Nations, 2015). 
-                        This encourages technology companies in developed economies to share innovations with developing nations. 
-                        For instance, the UN Technology Bank helps least developed countries access scientific knowledge 
-                        and digital tools (United Nations, 2024b). This transfer accelerates innovation
-                        in fields like renewable energy, health technology, and artificial intelligence.
+                        SDG 13 drives innovation in satellite imaging, drones, and AI-based monitoring (UNEP, 2023). 
+                        These technologies help track deforestation, coral bleaching, and wildlife migration. 
+                        For example, NASA satellites provide real-time data on forest cover loss, 
+                        supporting global conservation efforts.
                     </p>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl1.png" class="img-fluid row-icon">
+                    <img src="res/tl1.png" class="img-fluid row-icon bob">
                 </div>
             </div>
-            <div class="row text-end pt-5">
+
+            <!-- Section 2 -->
+            <div class="row pt-5 text-end">
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl2.png" class="img-fluid row-icon">
+                    <img src="res/tl2.png" class="img-fluid row-icon bob">
                 </div>
                 <div class="col">
-                    <h3 class="">Expanding Digital Infrastructure and Connectivity</h3>
-                    <p class="">
-                        One of the key targets (17.8) focuses on enhancing ICT access. Global internet penetration
-                        reached 68% in 2024, but 2.6 billion people remain offline (United Nations, 2024). 
-                        This presents both a challenge and an opportunity for the tech industry. 
-                        Companies like telecom providers, cloud platforms, and device manufacturers benefit from demand for affordable and widespread connectivity solutions.
-                    </p>
-                </div>
-            </div>
-            <div class="row text-start pt-5">
-                <div class="col">
-                    <h3 class="">Strengthening Global Tech Partnerships</h3>
+                    <h3 class="shadow-blur">Renewable Energy and Emissions Reduction</h3>
                     <p>
-                        Mobilizing financial resources (Target 17.3) includes boosting investment in innovation. 
-                        In 2023, private financial resources to developing countries totaled USD 58.7 billion, 
-                        a significant rise from 2019 (United Nations, 2024a). This flow of capital has enabled the growth of startups in fintech, edtech, healthtech, and agritech, making the tech industry a direct beneficiary of SDG 17.
-                    </p>
-                </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl3.png" class="img-fluid row-icon">
-                </div>
-            </div>
-            <div class="row text-end pt-5">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl4.png" class="img-fluid row-icon">
-                </div>
-                <div class="col">
-                    <h3 class="">Building Skills and Capacity</h3>
-                    <p>
-                        Capacity-building (Target 17.9) stresses the importance of knowledge and skills transfer. 
-                        Tech firms like Microsoft launched global digital training programs, providing millions
-                        with coding, cybersecurity, and cloud skills during and after COVID-19 (Reuters, 2025). 
-                        These initiatives both expand the skilled workforce and strengthen the industry’s long-term growth.
+                        One of the strongest tech links to SDG 13 is the rise of renewable energy. 
+                        Solar panels, wind turbines, and smart grids reduce greenhouse gas emissions 
+                        that harm ecosystems (IPCC, 2021). The tech industry plays a central role by 
+                        designing cleaner energy systems and battery storage solutions that protect 
+                        nature from further damage.
                     </p>
                 </div>
             </div>
-            <div class="row text-start pt-5">
+
+            <!-- Section 3 -->
+            <div class="row pt-5 text-start">
                 <div class="col">
-                    <h3 class="">Promoting Ethical and Inclusive Tech Growth</h3>
+                    <h3 class="shadow-blur">Green Digital Infrastructure</h3>
                     <p>
-                        SDG 17’s focus on inclusive partnerships urges tech giants to design affordable and accessible products
-                        (United Nations, 2015). This leads to innovations such as local-language platforms,
-                        low-cost devices, and assistive technologies. While this expands business opportunities, it also ensures
-                        eveloping nations are not left behind in the digital age.
+                        Data centers and cloud platforms consume vast energy, but companies are transitioning 
+                        to renewable-powered facilities. Google and Microsoft, for instance, pledged to operate 
+                        carbon-free by 2030 (Reuters, 2024). This aligns with SDG 13 by cutting emissions 
+                        while reducing the environmental footprint of digital infrastructure.
                     </p>
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl5.png" class="img-fluid row-icon">
+                    <img src="res/tl3.png" class="img-fluid row-icon bob">
                 </div>
             </div>
-            <div class="row text-end pt-5">
+
+            <!-- Section 4 -->
+            <div class="row pt-5 text-end">
                 <div class="col d-flex justify-content-center align-items-center">
-                    <img src="res/tl6.png" class="img-fluid row-icon">
+                    <img src="res/tl4.png" class="img-fluid row-icon bob">
                 </div>
                 <div class="col">
-                    <h3 class="">Challenges and Risks</h3>
+                    <h3 class="shadow-blur">Precision Agriculture and Sustainable Land Use</h3>
                     <p>
-                        Despite progress, the global tech industry faces challenges under SDG 17. Rising digital dependency on foreign corporations risks weakening local tech sovereignty. Data privacy concerns in cross-border partnerships remain unresolved.
-                        Moreover, the digital divide persists, with billions excluded from the benefits
-                        of modern technology (United Nations, 2024a).
+                        Tech innovations such as IoT sensors, AI-driven crop models, and drones enable 
+                        farmers to optimize water, fertilizer, and pesticide use (FAO, 2023). 
+                        This protects soil health, reduces deforestation pressure, and ensures that 
+                        agriculture adapts to climate change while sustaining ecosystems.
                     </p>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="row pt-5 text-start">
+                <div class="col">
+                    <h3 class="shadow-blur">Climate Data, Apps, and Awareness</h3>
+                    <p>
+                        Mobile apps and big data platforms help individuals and communities 
+                        understand climate risks. For example, climate alert apps warn coastal populations 
+                        about typhoons or floods, reducing ecosystem damage and human loss (WWF, 2024). 
+                        Tech-driven awareness ensures people make greener choices that benefit 
+                        both society and nature.
+                    </p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="res/tl5.png" class="img-fluid row-icon bob">
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="row pt-5 text-end">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="res/tl6.png" class="img-fluid row-icon bob">
+                </div>
+                <div class="col">
+                    <h3 class="shadow-blur">Promoting Ethical and Inclusive Climate Tech Growth</h3>
+                    <p>
+                        While SDG 13 emphasizes urgent climate action, it also highlights the need for fairness 
+                        and inclusivity in technological solutions. Ensuring that climate technologies—
+                        such as renewable energy systems, early-warning apps, and precision agriculture tools—
+                        are affordable and accessible prevents vulnerable nations from being left behind 
+                        (United Nations, 2015). For instance, low-cost solar kits and community-based microgrids 
+                        enable rural households to access clean power without relying on expensive infrastructure. 
+                        Similarly, localized climate apps in native languages ensure marginalized communities 
+                        benefit from digital innovations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="row pt-5 text-start">
+                <div class="col">
+                    <h3 class="shadow-blur">Challenges and Risks</h3>
+                    <p>
+                        While technology is essential for SDG 13, it also presents risks. 
+                        E-waste and resource extraction for electronics (e.g., lithium for batteries) 
+                        can harm ecosystems if unmanaged. Moreover, unequal access to green technologies 
+                        may widen the digital divide in climate adaptation (United Nations, 2015).
+                    </p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img src="res/tl7.png" class="img-fluid row-icon bob">
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="footer mt-5 bg-body-tertiary"> 
+        <div class="bg-gradient pt-3 footercolor">
+            <div class="container d-flex justify-content-center"> 
+                <h3>For References Refer To <a href="#">Here.</a></h3>
+            </div>
+            <div class="container d-flex justify-content-center"> 
+                <p>Website made by: David Lance B. Pacheco & Justin Ross S. Castro</p>
+            </div>
+        </div>
+    </footer>
+
 
     <footer class="footer mt-5 bg-body-tertiary"> 
         <div class="bg-gradient pt-3 footercolor">
