@@ -1,3 +1,8 @@
+// author : Lance Pacheco
+// justin tangina mo
+
+console.log("script.js loaded");
+
 function linkIn(div){
     div.classList.add("active");
 }
