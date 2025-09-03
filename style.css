@@ -123,7 +123,38 @@ a{
 .row .col {
     min-width: 0; /* allow columns to shrink inside flex container */
 }
+/* cover banner even on phones */
+:root {
+    --header-h: 64px; /* adjust to match your fixed header height */
+}
 
+.hero {
+    min-height: calc(100vh - var(--header-h));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: calc(var(--header-h) + 1rem);
+}
+
+/* Keep full image visible and centered (no squish) */
+.hero img.hero-banner {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* show the entire image using letterbox*/
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 576px) {
+    .hero {
+        padding: 0.75rem;
+        padding-top: calc(var(--header-h) + 0.75rem);
+    }
+    .hero img.hero-banner {
+        max-height: calc(100vh - var(--header-h) - 1.5rem);
+    }
+}
 /* check the large padding made are responsive (yung ps-5 / pe-5 / px-5) sa iphone and stuff */
 .container.ps-5.pe-5,
 .container.px-5 {
