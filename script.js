@@ -1,7 +1,6 @@
-// author : Lance Pacheco
-// justin tangina mo
+// author : Lance Pacheco & Justin Ross Castro
 
-console.log("script.js loaded");
+console.log("Hi from script.js");
 
 function linkIn(div){
     div.classList.add("active");
@@ -89,4 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     items.forEach(item => observer.observe(item));
+    console.log("dom events init: success");
 });
