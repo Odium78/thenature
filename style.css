@@ -118,3 +118,45 @@ body::before {
 a{
     color: black;
 }
+
+/* AAAAAAAAAAAAAAAA ANG HIRAP NETO GAWIN */
+.row .col {
+    min-width: 0; /* allow columns to shrink inside flex container */
+}
+
+/* check the large padding made are responsive (yung ps-5 / pe-5 / px-5) sa iphone and stuff */
+.container.ps-5.pe-5,
+.container.px-5 {
+    padding-left: clamp(0.75rem, 4vw, 3rem) !important;
+    padding-right: clamp(0.75rem, 4vw, 3rem) !important;
+}
+
+/* Extra adjustments for tablets and phones */
+@media (max-width: 992px) {
+    .container.ps-5.pe-5,
+    .container.px-5 {
+        padding-left: clamp(0.5rem, 4vw, 2rem) !important;
+        padding-right: clamp(0.5rem, 4vw, 2rem) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.ps-5.pe-5,
+    .container.px-5 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    /* sana it supports even the small phones */
+    h1.title { font-size: clamp(1.25rem, 5vw, 1.75rem); }
+    h3 { font-size: clamp(1rem, 4.5vw, 1.25rem); }
+    p { font-size: clamp(0.95rem, 3.5vw, 1rem); }
+
+    .row .col img.row-icon {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Reduce inter-row vertical spacing slightly */
+    .row.pt-5 { padding-top: 1.25rem !important; }
+}
